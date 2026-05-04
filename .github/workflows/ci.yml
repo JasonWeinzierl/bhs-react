@@ -17,7 +17,7 @@ jobs:
         with:
           node-version-file: .nvmrc
           cache: yarn
-      - run: yarn install
+      - run: yarn workspaces focus bhs
 
       - name: Validate current commit
         if: github.event_name == 'push'
@@ -27,3 +27,20 @@ jobs:
         if: github.event_name == 'pull_request'
         run: yarn commitlint --from ${{ github.event.pull_request.base.sha }} --to ${{ github.event.pull_request.head.sha }} --verbose
 
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - run: corepack enable
+      - uses: actions/setup-node@v6
+        with:
+          node-version-file: .nvmrc
+          cache: yarn
+
+      - run: yarn workspaces focus @bhs/react
+      - run: yarn lint
+        working-directory: packages/bhs-react
+      - run: yarn typecheck
+        working-directory: packages/bhs-react
+      - run: yarn build-web
+        working-directory: packages/bhs-react
