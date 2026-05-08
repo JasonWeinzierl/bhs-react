@@ -1172,9 +1172,9 @@ __metadata:
     react-native-screens: "npm:~4.24.0"
     react-native-web: "npm:~0.21.2"
     react-native-worklets: "npm:0.7.4"
-    tailwindcss: "npm:^4.2.4"
+    tailwindcss: "npm:^4.3.0"
     typescript: "npm:~5.9.3"
-    uniwind: "npm:^1.6.3"
+    uniwind: "npm:^1.6.4"
   languageName: unknown
   linkType: soft
 
@@ -9914,10 +9914,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tailwindcss@npm:^4.2.4":
-  version: 4.2.4
-  resolution: "tailwindcss@npm:4.2.4"
-  checksum: 10c0/1069304b6bf2855daa029ac4af382abb95ed26ae4d05bc09ea01a56e6af3de8b6fb1b4d508d8bbb39abf30a69766e6f2f75835e112ac6fc39ed94ae5d4901048
+"tailwindcss@npm:^4.3.0":
+  version: 4.3.0
+  resolution: "tailwindcss@npm:4.3.0"
+  checksum: 10c0/4cde389ee5e9132e7ef90e4c1d05978d52821761a00700c18b7d46d325881086f0a9c9ec7f616929ecd6e26109c41913538883e066c6dd4bd993debbbbc99084
   languageName: node
   linkType: hard
 
@@ -10266,9 +10266,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"uniwind@npm:^1.6.3":
-  version: 1.6.3
-  resolution: "uniwind@npm:1.6.3"
+"uniwind@npm:^1.6.4":
+  version: 1.6.4
+  resolution: "uniwind@npm:1.6.4"
   dependencies:
     "@tailwindcss/node": "npm:4.2.1"
     "@tailwindcss/oxide": "npm:4.2.1"
@@ -10278,7 +10278,7 @@ __metadata:
     react: ">=19.0.0"
     react-native: ">=0.81.0"
     tailwindcss: ">=4"
-  checksum: 10c0/ed45d5dd81c44235e7ea15b63f4a55c84c98fd851e0198d8a3e65ada64b1a057f21f8ac5f20fa7340e8102c16378037069dbf07db505b93e2633e0616299f494
+  checksum: 10c0/4ca47e3dc608fd1f4c4f78568fce164e829f03d7c54f18078c7d472ab41d2af611245e93cb61d3e19bb06bdb820fcbe7aeacbb0477b40853a9cc834829535b17
   languageName: node
   linkType: hard
 
