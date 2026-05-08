@@ -23,7 +23,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/core@npm:^7.11.6, @babel/core@npm:^7.12.3, @babel/core@npm:^7.20.0, @babel/core@npm:^7.25.2":
+"@babel/core@npm:^7.11.6, @babel/core@npm:^7.12.3, @babel/core@npm:^7.20.0, @babel/core@npm:^7.25.2, @babel/core@npm:^7.29.0":
   version: 7.29.0
   resolution: "@babel/core@npm:7.29.0"
   dependencies:
@@ -1142,10 +1142,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@bhs/react@workspace:packages/bhs-react"
   dependencies:
+    "@babel/core": "npm:^7.29.0"
+    "@expo/log-box": "npm:^55.0.12"
     "@expo/vector-icons": "npm:^15.1.1"
     "@react-navigation/bottom-tabs": "npm:^7.15.13"
     "@react-navigation/elements": "npm:^2.9.17"
     "@react-navigation/native": "npm:^7.2.4"
+    "@types/babel__core": "npm:^7"
     "@types/react": "npm:~19.2.14"
     eslint: "npm:^9.39.4"
     eslint-config-expo: "npm:~55.0.0"
@@ -1780,7 +1783,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@expo/log-box@npm:55.0.12":
+"@expo/log-box@npm:55.0.12, @expo/log-box@npm:^55.0.12":
   version: 55.0.12
   resolution: "@expo/log-box@npm:55.0.12"
   dependencies:
@@ -3226,7 +3229,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/babel__core@npm:^7.1.14":
+"@types/babel__core@npm:^7, @types/babel__core@npm:^7.1.14":
   version: 7.20.5
   resolution: "@types/babel__core@npm:7.20.5"
   dependencies:
