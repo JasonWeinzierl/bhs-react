@@ -7,7 +7,7 @@ permissions:
 
 jobs:
   install:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-slim
     steps:
       - uses: actions/checkout@v6
       - run: corepack enable
@@ -19,7 +19,7 @@ jobs:
 
   commitlint:
     needs: install
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-slim
     steps:
       - uses: actions/checkout@v6
         with:
@@ -42,7 +42,7 @@ jobs:
 
   test:
     needs: install
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-slim
     steps:
       - uses: actions/checkout@v6
       - run: corepack enable
@@ -59,7 +59,7 @@ jobs:
   deploy:
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     needs: test
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-slim
     permissions:
       contents: read
       id-token: write
@@ -67,6 +67,8 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+    outputs:
+      base_url: ${{ steps.pages.outputs.base_url }}
     steps:
       - uses: actions/checkout@v6
       - run: corepack enable
@@ -88,3 +90,17 @@ jobs:
           path: packages/bhs-react/dist
       - uses: actions/deploy-pages@v5
         id: deployment
+
+  e2e:
+    needs: deploy
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v6
+      - run: corepack enable
+      - uses: actions/setup-node@v6
+        with:
+          node-version-file: .nvmrc
+          cache: yarn
+
+      - run: yarn workspaces focus @bhs/e2e-web
+      - run: yarn workspace @bhs/e2e-web e2e --baseUrl=${{ needs.deploy.outputs.base_url }}
