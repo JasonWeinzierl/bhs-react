@@ -40,7 +40,7 @@ jobs:
         if: github.event_name == 'pull_request'
         run: yarn commitlint --from ${{ github.event.pull_request.base.sha }} --to ${{ github.event.pull_request.head.sha }} --verbose
 
-  build-and-test:
+  test:
     needs: install
     runs-on: ubuntu-latest
     steps:
@@ -54,5 +54,37 @@ jobs:
       - run: yarn workspaces focus @bhs/react
       - run: yarn workspace @bhs/react lint
       - run: yarn workspace @bhs/react typecheck
-      - run: yarn workspace @bhs/react build-web
       - run: yarn workspace @bhs/react test-ci
+
+  deploy:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: test
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+      pages: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v6
+      - run: corepack enable
+      - uses: actions/setup-node@v6
+        with:
+          node-version-file: .nvmrc
+          cache: yarn
+
+      - uses: actions/configure-pages@v6
+        id: pages
+
+      - run: yarn workspaces focus @bhs/react
+      - run: yarn workspace @bhs/react build-web
+        env:
+          BASE_URL: ${{ steps.pages.outputs.base_path }}
+
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: packages/bhs-react/dist
+      - uses: actions/deploy-pages@v5
+        id: deployment
