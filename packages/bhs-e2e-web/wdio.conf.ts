@@ -38,14 +38,14 @@ export const config: WebdriverIO.Config = {
   logLevel: 'info',
   bail: 0,
   waitforTimeout: 10_000,
-  connectionRetryTimeout: 120000,
+  connectionRetryTimeout: 120_000,
   connectionRetryCount: 3,
 
   reporters: ['spec'],
 
   framework: 'jasmine',
   jasmineOpts: {
-    defaultTimeoutInterval: 60000,
+    defaultTimeoutInterval: 60_000,
   },
 
   onPrepare(_cfg, capabilities) {

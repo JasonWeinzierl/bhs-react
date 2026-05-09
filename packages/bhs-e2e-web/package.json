@@ -4,7 +4,8 @@
   "description": "E2E tests for the BHS web app",
   "type": "module",
   "scripts": {
-    "e2e": "wdio run ./wdio.conf.ts"
+    "e2e": "wdio run ./wdio.conf.ts",
+    "lint": "eslint"
   },
   "dependencies": {
     "@actions/core": "^3.0.1",
@@ -20,8 +21,17 @@
     "webdriverio": "^9.27.1"
   },
   "devDependencies": {
+    "@eslint/js": "9.39.4",
+    "@stylistic/eslint-plugin": "^5.10.0",
     "@types/jasmine": "^5.1.15",
     "@types/node": "^24.12.3",
-    "typescript": "~5.9.3"
+    "eslint": "^9.39.4",
+    "eslint-plugin-n": "^18.0.1",
+    "eslint-plugin-perfectionist": "^5.9.0",
+    "eslint-plugin-unicorn": "^64.0.0",
+    "eslint-plugin-wdio": "^9.27.1",
+    "globals": "^16.5.0",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.59.2"
   }
 }
