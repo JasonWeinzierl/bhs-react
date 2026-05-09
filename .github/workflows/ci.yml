@@ -91,6 +91,20 @@ jobs:
       - uses: actions/deploy-pages@v5
         id: deployment
 
+  lint-e2e:
+    needs: install
+    runs-on: ubuntu-slim
+    steps:
+      - uses: actions/checkout@v6
+      - run: corepack enable
+      - uses: actions/setup-node@v6
+        with:
+          node-version-file: .nvmrc
+          cache: yarn
+
+      - run: yarn workspaces focus @bhs/e2e-web
+      - run: yarn workspace @bhs/e2e-web lint
+
   e2e:
     needs: deploy
     runs-on: macos-latest
