@@ -6,8 +6,9 @@ const { withUniwindConfig } = require('uniwind/metro');
 const config = getDefaultConfig(__dirname);
 
 config.resolver.blockList = [
+  ...config.resolver.blockList,
   /.*\.test\.[jt]sx?$/,
-].concat(config.resolver.blockList);
+];
 
 module.exports = withUniwindConfig(config, {
   cssEntryFile: './global.css',

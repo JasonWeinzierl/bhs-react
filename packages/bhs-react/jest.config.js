@@ -1,4 +1,4 @@
-//@ts-check
+// @ts-check
 
 /** @type {import('jest').Config} */
 module.exports = {

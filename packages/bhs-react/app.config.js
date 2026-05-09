@@ -1,10 +1,10 @@
-//@ts-check
+// @ts-check
 
 /**
  * @param {import('expo/config').ConfigContext} options
  * @returns {import('expo/config').ExpoConfig}
  */
-module.exports = ({ config }) => ({
+const app = ({ config }) => ({
   ...config,
   name: 'bhs-react',
   slug: 'bhs-react',
@@ -12,3 +12,4 @@ module.exports = ({ config }) => ({
     baseUrl: process.env.BASE_URL || '',
   },
 });
+module.exports = app;
