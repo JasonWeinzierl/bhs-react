@@ -6,6 +6,6 @@ describe('<Index />', () => {
   it('should render correctly', () => {
     const { getByTestId } = render(<Index />);
 
-    expect(getByTestId('WelcomeText')).toHaveTextContent('Edit app/index.tsx to edit this screen.');
+    expect(getByTestId('HomeScreen.title')).toHaveTextContent('The City Hall Museum sponsored by the Belton Historical Society.');
   });
 });
