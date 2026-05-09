@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    /* Type Checking */
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strict": true,
+    /* Modules */
+    "allowImportingTsExtensions": true,
+    "module": "Preserve",
+    "moduleResolution": "Bundler",
+    "resolveJsonModule": true,
+    "types": [
+      "node",
+      "jasmine",
+      "@wdio/globals/types",
+      "expect-webdriverio/jasmine",
+      "@wdio/jasmine-framework"
+    ],
+    /* Emit */
+    "noEmit": true,
+    /* Interop Constraints */
+    "isolatedModules": true,
+    /* Language and Environment */
+    "lib": [
+      "es2022",
+      "dom"
+    ],
+    "target": "ESNext",
+    /* Completeness */
+    "skipLibCheck": true,
+  },
+  "include": [
+    "test",
+    "wdio.conf.ts"
+  ]
+}
