@@ -1268,7 +1268,7 @@ __metadata:
     react-native-screens: "npm:~4.23.0"
     react-native-web: "npm:~0.21.2"
     react-native-worklets: "npm:0.7.4"
-    react-test-renderer: "npm:^19.2.6"
+    react-test-renderer: "npm:^19.2.0"
     tailwindcss: "npm:^4.3.0"
     typescript: "npm:~5.9.3"
     typescript-eslint: "npm:^8.59.2"
@@ -12989,7 +12989,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-is-19@npm:react-is@^19.2.5, react-is@npm:^19.1.0, react-is@npm:^19.2.0, react-is@npm:^19.2.6":
+"react-is-19@npm:react-is@^19.2.5, react-is@npm:^19.1.0, react-is@npm:^19.2.0":
   version: 19.2.6
   resolution: "react-is@npm:19.2.6"
   checksum: 10c0/263177f370fc156b279d22570dd6e922a0ad641a4a426a4cb70284b8003b00ef532d59f2beca1d22a1ca0b37f85f9077d7733ca5d344ebecd2942e9bc2a2a3c0
@@ -13225,7 +13225,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-test-renderer@npm:19.2.0":
+"react-test-renderer@npm:19.2.0, react-test-renderer@npm:^19.2.0":
   version: 19.2.0
   resolution: "react-test-renderer@npm:19.2.0"
   dependencies:
@@ -13234,18 +13234,6 @@ __metadata:
   peerDependencies:
     react: ^19.2.0
   checksum: 10c0/cc116b908489316f06881bf7392c5fad4b5f66be42d2f04788f4179a19e86674d54f1006b33fe9eba28bde6edb4cb38764ab75b416f28d02e0182c5552c97551
-  languageName: node
-  linkType: hard
-
-"react-test-renderer@npm:^19.2.6":
-  version: 19.2.6
-  resolution: "react-test-renderer@npm:19.2.6"
-  dependencies:
-    react-is: "npm:^19.2.6"
-    scheduler: "npm:^0.27.0"
-  peerDependencies:
-    react: ^19.2.6
-  checksum: 10c0/c8267de9def8ba2b821ebae1de9becb2d67e95f39d5ec4c63560446e60649f651bd1426f041d31bacbedc0dcb1a0cfae321d6d5ebe3563821c709cc8f4171363
   languageName: node
   linkType: hard
 
