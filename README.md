@@ -2,9 +2,8 @@
 
 ## Getting Started
 
-Install Node.js 24.
-
 ```sh
+nvm use v24
 corepack enable
 yarn install
 ```
