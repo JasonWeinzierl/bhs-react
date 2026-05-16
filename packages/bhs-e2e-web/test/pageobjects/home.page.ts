@@ -12,6 +12,10 @@ class HomePage extends Page {
   get title() {
     return this.getByTestID('HomeScreen.title');
   }
+
+  get description() {
+    return this.getByTestID('HomeScreen.description');
+  }
 }
 
 export default new HomePage();

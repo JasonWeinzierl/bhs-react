@@ -7,6 +7,7 @@ describe('home', () => {
     await HomePage.open();
 
     await expect(HomePage.self).toBeDisplayed();
-    await expect(HomePage.title).toHaveText('The City Hall Museum sponsored by the Belton Historical Society.');
+    await expect(HomePage.title).toHaveText('The City Hall Museum sponsored by the Belton Historical Society');
+    await expect(HomePage.description).toBeDisplayed();
   });
 });
