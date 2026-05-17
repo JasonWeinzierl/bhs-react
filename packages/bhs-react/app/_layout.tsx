@@ -1,7 +1,10 @@
 import '../global.css';
 
-import { Stack } from 'expo-router';
+import { SplashScreen, Stack } from 'expo-router';
+import { useEffect } from 'react';
 import { ImageBackground } from 'react-native';
+
+import useAppFonts from '@/fonts/useAppFonts';
 
 // TODO: route loading is customization is unreleased: https://github.com/expo/expo/pull/43885
 // export function SuspenseFallback() {
@@ -12,7 +15,17 @@ import { ImageBackground } from 'react-native';
 //  );
 // }
 
+void SplashScreen.preventAutoHideAsync();
+
 export default function RootLayout() {
+  const [fontLoaded, fontError] = useAppFonts();
+
+  useEffect(() => {
+    if (fontLoaded || fontError) {
+      void SplashScreen.hideAsync();
+    }
+  }, [fontLoaded, fontError]);
+
   return (
     <ImageBackground
       source={{ uri: 'https://beltonhistoricalsociety.org/assets/img/2019/webtreats_wood-pattern3-512.jpg' }}

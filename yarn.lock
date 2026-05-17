@@ -1223,6 +1223,7 @@ __metadata:
   resolution: "@bhs/react@workspace:packages/bhs-react"
   dependencies:
     "@babel/core": "npm:^7.29.0"
+    "@expo-google-fonts/josefin-slab": "npm:^0.4.1"
     "@expo/log-box": "npm:^55.0.12"
     "@expo/vector-icons": "npm:^15.1.1"
     "@react-navigation/bottom-tabs": "npm:^7.15.5"
@@ -1813,6 +1814,13 @@ __metadata:
     "@eslint/core": "npm:^0.17.0"
     levn: "npm:^0.4.1"
   checksum: 10c0/51600f78b798f172a9915dffb295e2ffb44840d583427bc732baf12ecb963eb841b253300e657da91d890f4b323d10a1bd12934bf293e3018d8bb66fdce5217b
+  languageName: node
+  linkType: hard
+
+"@expo-google-fonts/josefin-slab@npm:^0.4.1":
+  version: 0.4.1
+  resolution: "@expo-google-fonts/josefin-slab@npm:0.4.1"
+  checksum: 10c0/9ca96833a52e07783eae3ac9b00c8a17c20e614272d160cb1f9fe4a36d479b7c680e64bf439032860a9102bdc7e1c73d772a47ba42f29e3398a6e6d551018b3f
   languageName: node
   linkType: hard
 

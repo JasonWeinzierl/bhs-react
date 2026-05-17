@@ -52,7 +52,7 @@ export default function Index() {
         >
           <Text
             testID="HomeScreen.title"
-            className="text-center text-4xl dark:text-amber-50"
+            className="text-center font-serif-semibold text-4xl dark:text-amber-50"
           >
             The City Hall Museum
             {' '}

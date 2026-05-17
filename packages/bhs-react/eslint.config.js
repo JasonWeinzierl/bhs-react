@@ -60,6 +60,7 @@ module.exports = defineConfig([
       'perfectionist/sort-imports': 'warn',
       'perfectionist/sort-named-imports': 'warn',
 
+      'unicorn/filename-case': 'off',
       'unicorn/prevent-abbreviations': 'off',
       'unicorn/prefer-module': 'off',
     },
