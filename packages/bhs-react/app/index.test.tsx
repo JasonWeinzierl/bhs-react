@@ -2,15 +2,13 @@ import { render } from '@testing-library/react-native';
 
 import Index from '@/app/index';
 
-jest.mock('expo-router', () => {
-  return {
-    Stack: {
-      Screen: {
-        Title: () => <></>,
-      },
+jest.mock('expo-router', () => ({
+  Stack: {
+    Screen: {
+      Title: () => <></>,
     },
-  };
-});
+  },
+}));
 
 describe('<Index />', () => {
   it('should render correctly', () => {
