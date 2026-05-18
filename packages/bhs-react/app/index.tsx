@@ -1,4 +1,5 @@
 import { Image } from 'expo-image';
+import { Stack } from 'expo-router';
 import { ScrollView, Text, View } from 'react-native';
 
 export default function Index() {
@@ -6,6 +7,7 @@ export default function Index() {
     <ScrollView
       className="container mx-auto sm:px-20"
     >
+      <Stack.Screen.Title>Home</Stack.Screen.Title>
       <View
         testID="HomeScreen"
         className="relative rounded-sm bg-gray-100 dark:bg-gray-800"
