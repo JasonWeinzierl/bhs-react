@@ -6,7 +6,7 @@ jest.mock('expo-router', () => {
   return {
     Stack: {
       Screen: {
-        Title: () => false,
+        Title: () => <></>,
       },
     },
   };
