@@ -1,6 +1,6 @@
 import { Image } from 'expo-image';
 import { Stack } from 'expo-router';
-import { ScrollView, View } from 'react-native';
+import { View } from 'react-native';
 
 import { AppH1 } from '@/text/AppH1';
 import { AppSmall } from '@/text/AppSmall';
@@ -8,7 +8,7 @@ import { AppText } from '@/text/AppText';
 
 export default function Index() {
   return (
-    <ScrollView
+    <View
       className="container mx-auto sm:px-20"
     >
       <Stack.Screen.Title>Home</Stack.Screen.Title>
@@ -69,6 +69,6 @@ export default function Index() {
           </AppText>
         </View>
       </View>
-    </ScrollView>
+    </View>
   );
 }

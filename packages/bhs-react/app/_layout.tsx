@@ -2,8 +2,9 @@ import '../global.css';
 
 import { SplashScreen, Stack } from 'expo-router';
 import { useEffect } from 'react';
-import { ImageBackground } from 'react-native';
+import { ImageBackground, ScrollView } from 'react-native';
 
+import AppHeader from '@/header/AppHeader';
 import useAppFonts from '@/text/useAppFonts';
 
 // TODO: route loading is customization is unreleased: https://github.com/expo/expo/pull/43885
@@ -34,11 +35,15 @@ export default function RootLayout() {
       width={512}
       height={512}
     >
-      <Stack
-        screenOptions={{
-          presentation: 'transparentModal',
-        }}
-      />
+      <ScrollView>
+        <AppHeader />
+
+        <Stack
+          screenOptions={{
+            presentation: 'transparentModal',
+          }}
+        />
+      </ScrollView>
     </ImageBackground>
   );
 }
