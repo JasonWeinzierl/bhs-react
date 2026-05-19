@@ -13,6 +13,11 @@ Use these steps at the start of a local agent session.
 
 From repository root:
 
+- Commitlint requirements:
+  - Commit messages must follow commitlint/conventional commit format (for example: `feat: ...`, `fix: ...`, `docs: ...`).
+  - PR titles should also follow the same commitlint format so squash-merge commit messages stay valid.
+  - Validate the latest commit locally with: `yarn commitlint --last --verbose`
+
 - App checks:
   - `yarn workspaces focus @bhs/react`
   - `yarn workspace @bhs/react lint`
