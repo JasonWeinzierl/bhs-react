@@ -4,8 +4,8 @@ Use these steps at the start of a local agent session.
 
 ## Local environment
 
-1. `nvm install v24`
-2. `nvm use v24`
+1. `nvm install`
+2. `nvm use`
 3. `corepack enable`
 4. `yarn install`
 
