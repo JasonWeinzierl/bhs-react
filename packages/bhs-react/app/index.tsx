@@ -1,8 +1,9 @@
 import { Image } from 'expo-image';
 import { Stack } from 'expo-router';
-import { ScrollView, Text, View } from 'react-native';
+import { ScrollView, View } from 'react-native';
 
 import { AppH1 } from '@/text/AppH1';
+import { AppSmall } from '@/text/AppSmall';
 import { AppText } from '@/text/AppText';
 
 export default function Index() {
@@ -61,7 +62,7 @@ export default function Index() {
           >
             The City Hall Museum
             {' '}
-            <Text className="text-[80%]">sponsored by the Belton Historical Society</Text>
+            <AppSmall>sponsored by the Belton Historical Society</AppSmall>
           </AppH1>
           <AppText testID="HomeScreen.description" className="text-center">
             A non-profit, charitable organization whose purpose is to discover, collect, and research artifacts, documents, and material relating to the history of the surrounding community and to record historical information of the present.
