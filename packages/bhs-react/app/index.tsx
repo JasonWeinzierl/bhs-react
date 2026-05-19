@@ -2,6 +2,9 @@ import { Image } from 'expo-image';
 import { Stack } from 'expo-router';
 import { ScrollView, Text, View } from 'react-native';
 
+import { AppH1 } from '@/text/AppH1';
+import { AppText } from '@/text/AppText';
+
 export default function Index() {
   return (
     <ScrollView
@@ -10,7 +13,7 @@ export default function Index() {
       <Stack.Screen.Title>Home</Stack.Screen.Title>
       <View
         testID="HomeScreen"
-        className="relative rounded-sm bg-gray-100 dark:bg-gray-800"
+        className="relative rounded-sm bg-base-100"
       >
         <View className="relative aspect-video w-full">
           <Image
@@ -52,17 +55,17 @@ export default function Index() {
         <View
           className="gap-2 p-6"
         >
-          <Text
+          <AppH1
             testID="HomeScreen.title"
-            className="text-center font-serif-semibold text-4xl dark:text-amber-50"
+            className="text-center"
           >
             The City Hall Museum
             {' '}
             <Text className="text-[80%]">sponsored by the Belton Historical Society</Text>
-          </Text>
-          <Text testID="HomeScreen.description" className="text-center text-xl dark:text-amber-50">
+          </AppH1>
+          <AppText testID="HomeScreen.description" className="text-center">
             A non-profit, charitable organization whose purpose is to discover, collect, and research artifacts, documents, and material relating to the history of the surrounding community and to record historical information of the present.
-          </Text>
+          </AppText>
         </View>
       </View>
     </ScrollView>

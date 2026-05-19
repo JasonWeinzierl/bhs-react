@@ -1270,6 +1270,7 @@ __metadata:
     react-native-web: "npm:~0.21.2"
     react-native-worklets: "npm:0.7.4"
     react-test-renderer: "npm:^19.2.0"
+    tailwind-merge: "npm:^3.6.0"
     tailwindcss: "npm:^4.3.0"
     typescript: "npm:~5.9.3"
     typescript-eslint: "npm:^8.59.2"
@@ -14638,6 +14639,13 @@ __metadata:
     "@eslint/css":
       optional: true
   checksum: 10c0/5763ec9be6e3dc3dbc309b17a0363271e2816b2d23eaa20cdc37421947b460c683534c57dc522b48e3d2eefe05e24f199239dfca5ed3b47626e5e6d23465a870
+  languageName: node
+  linkType: hard
+
+"tailwind-merge@npm:^3.6.0":
+  version: 3.6.0
+  resolution: "tailwind-merge@npm:3.6.0"
+  checksum: 10c0/a728d929f4786bcb48641db4228cc8c006a7545491783a658fb4d24d177dab960620991d17805a047309228de50ab949ca8d9e112c30183da0432367796ae186
   languageName: node
   linkType: hard
 

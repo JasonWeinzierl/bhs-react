@@ -4,7 +4,7 @@ import { SplashScreen, Stack } from 'expo-router';
 import { useEffect } from 'react';
 import { ImageBackground } from 'react-native';
 
-import useAppFonts from '@/fonts/useAppFonts';
+import useAppFonts from '@/text/useAppFonts';
 
 // TODO: route loading is customization is unreleased: https://github.com/expo/expo/pull/43885
 // export function SuspenseFallback() {
