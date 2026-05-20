@@ -16,5 +16,19 @@
   },
   "scripts": {
     "prepare": "husky"
+  },
+  "dependenciesMeta": {
+    "edgedriver": {
+      "built": true
+    },
+    "esbuild": {
+      "built": true
+    },
+    "geckodriver": {
+      "built": true
+    },
+    "unrs-resolver": {
+      "built": false
+    }
   }
 }

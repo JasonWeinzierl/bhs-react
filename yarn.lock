@@ -5703,6 +5703,15 @@ __metadata:
     "@commitlint/cli": "npm:^21.0.1"
     "@commitlint/config-conventional": "npm:^21.0.1"
     husky: "npm:^9.1.7"
+  dependenciesMeta:
+    edgedriver:
+      built: true
+    esbuild:
+      built: true
+    geckodriver:
+      built: true
+    unrs-resolver:
+      built: false
   languageName: unknown
   linkType: soft
 
