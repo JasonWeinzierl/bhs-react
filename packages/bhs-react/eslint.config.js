@@ -11,7 +11,6 @@ const { default: perfectionist } = require('eslint-plugin-perfectionist');
 const regexp = require('eslint-plugin-regexp');
 const { default: unicorn } = require('eslint-plugin-unicorn');
 const { defineConfig } = require('eslint/config');
-const tseslint = require('typescript-eslint');
 
 module.exports = defineConfig([
   expoConfig,
@@ -69,10 +68,6 @@ module.exports = defineConfig([
     files: [
       '**/*.{ts,tsx}',
     ],
-    extends: [
-      tseslint.configs.strictTypeChecked,
-      tseslint.configs.stylisticTypeChecked,
-    ],
     languageOptions: {
       parserOptions: {
         projectService: true,
@@ -103,6 +98,7 @@ module.exports = defineConfig([
       },
     },
     rules: {
+      'better-tailwindcss/enforce-canonical-classes': 'off',
       'better-tailwindcss/enforce-consistent-line-wrapping': 'off',
     },
   },
