@@ -1125,7 +1125,7 @@ __metadata:
     tailwindcss: "npm:^4.3.0"
     typescript: "npm:~6.0.3"
     typescript-eslint: "npm:^8.60.0"
-    uniwind: "npm:^1.6.5"
+    uniwind: "npm:^1.7.0"
   languageName: unknown
   linkType: soft
 
@@ -15163,9 +15163,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"uniwind@npm:^1.6.5":
-  version: 1.6.5
-  resolution: "uniwind@npm:1.6.5"
+"uniwind@npm:^1.7.0":
+  version: 1.7.0
+  resolution: "uniwind@npm:1.7.0"
   dependencies:
     "@tailwindcss/node": "npm:4.2.1"
     "@tailwindcss/oxide": "npm:4.2.1"
@@ -15175,7 +15175,7 @@ __metadata:
     react: ">=19.0.0"
     react-native: ">=0.81.0"
     tailwindcss: ">=4"
-  checksum: 10c0/ad1bfafc4b7435abdc8ba0f972f3d7e86ed3aeff65efedd0d59e591e3540b8ac6949d407c3ea121a86c424694c9bad72a68e3323105e59093d7d1e2166042d5e
+  checksum: 10c0/803287b2f2c0186ef735b7d8c8ab161a86a4b5db53fd583a1b2527df397bd99e8dfbf9d3cb3c43d9f4f272afdd54c46e56490dceab2c3d08f1894af51832e430
   languageName: node
   linkType: hard
 
