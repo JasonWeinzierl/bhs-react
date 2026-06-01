@@ -32,6 +32,6 @@
     "eslint-plugin-wdio": "^9.27.1",
     "globals": "^16.5.0",
     "typescript": "~5.9.3",
-    "typescript-eslint": "^8.59.2"
+    "typescript-eslint": "^8.60.0"
   }
 }
