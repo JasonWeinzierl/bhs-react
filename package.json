@@ -27,6 +27,9 @@
     "geckodriver": {
       "built": true
     },
+    "msgpackr-extract": {
+      "built": false
+    },
     "unrs-resolver": {
       "built": false
     }
