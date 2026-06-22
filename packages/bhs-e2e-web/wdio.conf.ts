@@ -3,10 +3,16 @@ import * as core from '@actions/core';
 const ALL_CAPABILITIES = [{
   browserName: 'chrome',
   'goog:chromeOptions': {
+    binary: process.env.CHROME_BIN,
     args: [
       'headless',
+      'no-sandbox',
+      'disable-dev-shm-usage',
       'window-size=1920,1080',
     ],
+  },
+  'wdio:chromedriverOptions': {
+    binary: process.env.CHROMEDRIVER_BIN,
   },
 }, {
   browserName: 'firefox',
@@ -22,10 +28,12 @@ const ALL_CAPABILITIES = [{
   'ms:edgeOptions': {
     args: [
       'headless',
+      'no-sandbox',
+      'disable-dev-shm-usage',
       'window-size=1920,1080',
     ],
   },
-}];
+}] satisfies WebdriverIO.Capabilities[];
 
 function getCapabilities() {
   if (process.env.CI) {

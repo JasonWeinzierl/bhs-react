@@ -121,5 +121,13 @@ jobs:
           node-version-file: .nvmrc
           cache: yarn
 
+      - uses: browser-actions/setup-chrome@v2
+        id: setup-chrome
+        with:
+          install-chromedriver: true
+
       - run: yarn workspaces focus @bhs/e2e-web
       - run: yarn workspace @bhs/e2e-web e2e --baseUrl=${{ needs.deploy.outputs.base_url }}
+        env:
+          CHROME_BIN: ${{ steps.setup-chrome.outputs.chrome-path }}
+          CHROMEDRIVER_BIN: ${{ steps.setup-chrome.outputs.chromedriver-path }}
