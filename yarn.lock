@@ -1125,7 +1125,7 @@ __metadata:
     tailwindcss: "npm:^4.3.0"
     typescript: "npm:~6.0.3"
     typescript-eslint: "npm:^8.61.1"
-    uniwind: "npm:^1.8.0"
+    uniwind: "npm:^1.9.0"
   languageName: unknown
   linkType: soft
 
@@ -14930,9 +14930,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"uniwind@npm:^1.8.0":
-  version: 1.8.0
-  resolution: "uniwind@npm:1.8.0"
+"uniwind@npm:^1.9.0":
+  version: 1.9.0
+  resolution: "uniwind@npm:1.9.0"
   dependencies:
     "@tailwindcss/node": "npm:4.3.0"
     "@tailwindcss/oxide": "npm:4.3.0"
@@ -14953,7 +14953,7 @@ __metadata:
       optional: true
   bin:
     uniwind: dist/cli/index.mjs
-  checksum: 10c0/dd87db24a1a78985e5c44baffe5001af36d2b7542be3cfc081293fa4738d7ede1eafd044cdfb13b4eb41f900c80f6f5ed923f394c7f760b18e7ed9b1e98c3f70
+  checksum: 10c0/69d3e2d604f6982b08d28217424e9bb5e16a967a5ea14b4ae77f4752c05d4456746486c99e3995570c17b266e1d81b163c635450dd9a825675ab5af549177760
   languageName: node
   linkType: hard
 
